@@ -14,7 +14,7 @@ namespace StringCalculator
             var webServerMock = new Mock<IWebService>();
             var calculator = new Calculator(stubbedLogger.Object, webServerMock.Object);
             int result = calculator.Add("1,2");
-            webServerMock.Verify(r => r.LogFailure("Failed"));
+            webServerMock.Verify(r => r.LogFailure("Logging failed"));
         }
 
     }

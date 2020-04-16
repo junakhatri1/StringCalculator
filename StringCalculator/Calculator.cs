@@ -34,7 +34,7 @@ namespace StringCalculator
             }
             catch(LogException ex)
             {
-                WebService.LogFailure($"Logging failed,{ex.Message} ");
+                WebService.LogFailure("Logging failed");
             }
            
             return result;
